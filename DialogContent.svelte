@@ -7,7 +7,7 @@
   import { onDestroy } from 'svelte'
   import { getDisclosure, DIALOG } from './internal/context'
   import { portal, trapFocus, dismiss } from './internal/actions'
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
 
   let className: string | undefined = undefined
   export { className as class }

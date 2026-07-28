@@ -1,6 +1,6 @@
 <!-- CardHeader — mirrors the shadcn backend's grid header. -->
 <script lang="ts">
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
   let className: string | undefined = undefined
   export { className as class }
 </script>

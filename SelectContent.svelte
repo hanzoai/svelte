@@ -6,7 +6,7 @@
 <script lang="ts">
   import { getSelect } from './internal/context'
   import { rovingFocus } from './internal/actions'
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
 
   let className: string | undefined = undefined
   export { className as class }

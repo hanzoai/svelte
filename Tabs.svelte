@@ -5,7 +5,7 @@
 -->
 <script lang="ts">
   import { createSelection, TABS } from './internal/context'
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
 
   let className: string | undefined = undefined
   export { className as class }

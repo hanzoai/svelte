@@ -1,0 +1,41 @@
+{
+  "name": "@hanzo/svelte",
+  "version": "1.0.0",
+  "description": "Hanzo UI, Svelte 5. The shadcn-shaped components extracted from @hanzo/ui so the core library stays one stack. Same shapes, same variants, same tokens.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanzoai/svelte.git"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "*.svelte",
+    "index.ts",
+    "core",
+    "README.md"
+  ],
+  "svelte": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": {
+      "svelte": "./index.ts",
+      "types": "./index.ts",
+      "default": "./index.ts"
+    },
+    "./*.svelte": "./*.svelte"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.1"
+  },
+  "peerDependencies": {
+    "svelte": ">=5"
+  },
+  "devDependencies": {
+    "svelte": "^5.56.8",
+    "svelte-check": "^4.7.4",
+    "typescript": "^6.0.3"
+  }
+}

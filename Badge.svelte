@@ -21,7 +21,7 @@
 </script>
 
 <script lang="ts">
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
   let className: string | undefined = undefined
   export { className as class }
   export let variant: BadgeVariant = 'default'

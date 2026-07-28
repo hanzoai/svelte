@@ -1,6 +1,6 @@
 <!-- Textarea — standard-token multiline field; mirrors the shadcn backend. -->
 <script lang="ts">
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
 
   let className: string | undefined = undefined
   export { className as class }

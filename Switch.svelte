@@ -3,7 +3,7 @@
   shadcn backend's data-state token styling. `bind:checked` is supported.
 -->
 <script lang="ts">
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
   import { createEventDispatcher } from 'svelte'
 
   let className: string | undefined = undefined

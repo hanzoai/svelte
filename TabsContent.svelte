@@ -1,7 +1,7 @@
 <!-- TabsContent — the panel shown for its `value` (role=tabpanel). -->
 <script lang="ts">
   import { getSelection, TABS } from './internal/context'
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
 
   let className: string | undefined = undefined
   export { className as class }

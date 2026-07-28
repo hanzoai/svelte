@@ -1,7 +1,7 @@
 <!-- DropdownMenuItem — a menu item (native button → free Enter/Space activation). -->
 <script lang="ts">
   import { getDisclosure, DROPDOWN } from './internal/context'
-  import { cn } from '../../core/cn'
+  import { cn } from './core/cn'
 
   let className: string | undefined = undefined
   export { className as class }
