@@ -2,7 +2,7 @@
   "name": "@hanzo/svelte",
   "version": "1.0.0",
   "description": "Hanzo UI, Svelte 5. The shadcn-shaped components extracted from @hanzo/ui so the core library stays one stack. Same shapes, same variants, same tokens.",
-  "license": "MIT",
+  "license": "MIT OR Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hanzoai/svelte.git"
