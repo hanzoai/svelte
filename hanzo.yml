@@ -1,0 +1,23 @@
+# Canonical CI/CD config for hanzoai/svelte — the one file both the hanzoai/ci
+# reusable (.hanzo/workflows/cicd.yml) and platform.hanzo.ai read.
+#
+# An npm package (@hanzo/svelte): the shadcn-shaped components extracted from
+# @hanzo/ui, published as SOURCE — index.ts and the .svelte files ship straight
+# to consumers, there is no dist and no build step. No image, no deploy.
+#
+# That is exactly why the gate is svelte-check and not a build: nothing here
+# ever compiles in this repo, so a broken component only fails in whichever app
+# imports it. svelte-check compiles every .svelte file and typechecks the TS
+# inside it against the declared svelte@5 peer, which is the only place that
+# break can be caught before a consumer finds it. `--threshold error` keeps it
+# from going red on style warnings while still failing on real errors.
+#
+# `npm install` rather than `ci`: this package pins no lockfile, deliberately —
+# it resolves against whatever svelte 5 the consumer has, and the gate should
+# see the same thing.
+test:
+  - name: build
+    run: |
+      set -e
+      npm install
+      npx svelte-check --threshold error --fail-on-warnings false
