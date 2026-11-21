@@ -1,5 +1,7 @@
 # @hanzo/svelte
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/svelte&ref=main&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/svelte&ref=main&action=edit) [![Deploy with Hanzo](https://hanzo.app/badges/deploy-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/svelte&ref=main&action=deploy)
+
 Hanzo UI for Svelte 5.
 
 These components used to live inside `@hanzo/ui` as `@hanzo/ui/svelte`. They are
